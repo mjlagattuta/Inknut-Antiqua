@@ -1,5 +1,8 @@
 {
 .appVersion = "1141";
+DisplayStrings = (
+"/reph-deva/reph-deva.low/reph-deva.tall"
+);
 classes = (
 {
 automatic = 1;
@@ -68,11 +71,11 @@ value = "http://scripts.sil.org/OFL";
 },
 {
 name = description;
-value = "»Inknut Antiqua« is an Antiqua typeface for litterature and long-form text. It is designed to evoke Venetian incunabula and humanist manuscripts. It comes with a complement of typographical sorts and OpenType features for the purpose. The proportions of Inknut Antiqua make it well suited for low-resolution screens.";
+value = "Inknut Antiqua is an Antiqua typeface for litterature and long-form text. It is designed to evoke Venetian incunabula and humanist manuscripts. It comes with a complement of typographical sorts and OpenType features for the purpose. The proportions of Inknut Antiqua make it well suited for low-resolution screens.";
 },
 {
 name = note;
-value = "reph-deva causes fontmake issue with the eCandraMattra, because the reph has both a top and right attachment";
+value = "reph-deva.low (and reph-deva.tail) used to cause a fontmake issue with the eCandraMattra, because the reph has both a top and right attachment";
 },
 {
 name = Axes;
@@ -88,7 +91,7 @@ name = "Variation Font Origin";
 value = "EED98765-8720-4D79-BBF2-40D7DAF3490F";
 }
 );
-date = "2014-12-01 19:30:15 +0000";
+date = "2018-10-29 15:31:34 +0000";
 designer = "Claus Eggers Sørensen";
 designerURL = "http://www.forthehearts.net";
 familyName = "Inknut Antiqua";
@@ -119299,17 +119302,18 @@ unicode = 0020;
 },
 {
 glyphname = nbspace;
-lastChange = "2018-10-29 15:13:11 +0000";
+lastChange = "2018-10-29 15:20:31 +0000";
 layers = (
 {
 layerId = "2CCCAF06-0AAA-44C6-8F00-0A68246BB68E";
-width = 279;
+width = 239;
 },
 {
 layerId = "EED98765-8720-4D79-BBF2-40D7DAF3490F";
-width = 279;
+width = 284;
 }
 );
+widthMetricsKey = space;
 unicode = 00A0;
 },
 {
@@ -147316,5 +147320,5 @@ tH = 41;
 };
 };
 versionMajor = 1;
-versionMinor = 1;
+versionMinor = 2;
 }
