@@ -1,5 +1,8 @@
 {
 .appVersion = "1141";
+DisplayStrings = (
+"/leftWhitePointingindex"
+);
 classes = (
 {
 automatic = 1;
@@ -4282,7 +4285,7 @@ unicode = 0049;
 {
 color = 5;
 glyphname = IJ;
-lastChange = "2014-10-09 19:50:03 +0000";
+lastChange = "2018-10-12 15:22:59 +0000";
 layers = (
 {
 components = (
@@ -4308,7 +4311,7 @@ transform = "{1, 0, 0, 1, 484, 0}";
 }
 );
 layerId = "2CCCAF06-0AAA-44C6-8F00-0A68246BB68E";
-width = 928;
+width = 918;
 }
 );
 leftKerningGroup = I;
@@ -4353,7 +4356,7 @@ unicode = 00CD;
 {
 color = 5;
 glyphname = Iacute_J.loclNLD;
-lastChange = "2014-11-01 14:54:46 +0000";
+lastChange = "2018-10-12 15:22:59 +0000";
 layers = (
 {
 components = (
@@ -4387,7 +4390,7 @@ transform = "{1, 0, 0, 1, 551, 243}";
 }
 );
 layerId = "2CCCAF06-0AAA-44C6-8F00-0A68246BB68E";
-width = 928;
+width = 918;
 }
 );
 leftKerningGroup = I;
@@ -4605,7 +4608,7 @@ unicode = 012E;
 },
 {
 glyphname = J;
-lastChange = "2014-07-01 13:23:08 +0000";
+lastChange = "2018-10-12 15:22:26 +0000";
 layers = (
 {
 anchors = (
@@ -4713,7 +4716,7 @@ nodes = (
 );
 }
 );
-width = 444;
+width = 434;
 }
 );
 leftKerningGroup = I;
@@ -19440,7 +19443,7 @@ unicode = 0146;
 {
 color = 7;
 glyphname = eng;
-lastChange = "2014-06-29 19:25:21 +0000";
+lastChange = "2018-10-12 15:18:23 +0000";
 layers = (
 {
 anchors = (
@@ -19450,8 +19453,6 @@ position = "{350, 531}";
 }
 );
 layerId = "E07B5D26-C0CD-4D0E-A705-659FB2222D21";
-leftMetricsKey = "=n";
-rightMetricsKey = "=dotlessj";
 paths = (
 {
 closed = 1;
@@ -19522,8 +19523,6 @@ position = "{370, 543}";
 }
 );
 layerId = "2CCCAF06-0AAA-44C6-8F00-0A68246BB68E";
-leftMetricsKey = "=n";
-rightMetricsKey = "=dotlessj";
 paths = (
 {
 closed = 1;
@@ -19588,9 +19587,9 @@ width = 753;
 }
 );
 leftKerningGroup = n;
-leftMetricsKey = n;
+leftMetricsKey = "=n";
 rightKerningGroup = j;
-rightMetricsKey = dotlessj;
+rightMetricsKey = "=jdotless";
 unicode = 014B;
 },
 {
@@ -60355,7 +60354,7 @@ unicode = A8FB;
 {
 color = 5;
 glyphname = "ka_ra-deva";
-lastChange = "2014-11-01 14:54:47 +0000";
+lastChange = "2018-10-29 14:45:54 +0000";
 layers = (
 {
 anchors = (
@@ -70379,7 +70378,7 @@ rightMetricsKey = "ra-deva";
 {
 color = 7;
 glyphname = "ny_ca-deva";
-lastChange = "2014-11-01 14:54:45 +0000";
+lastChange = "2018-10-29 14:37:50 +0000";
 layers = (
 {
 anchors = (
@@ -76402,13 +76401,17 @@ rightMetricsKey = "ya-deva";
 },
 {
 glyphname = "t_ra-deva";
-lastChange = "2014-11-01 14:54:44 +0000";
+lastChange = "2018-10-29 14:38:32 +0000";
 layers = (
 {
 anchors = (
 {
 name = nukta;
 position = "{353, -50}";
+},
+{
+name = right;
+position = "{547, 786}";
 }
 );
 background = {
@@ -104886,7 +104889,7 @@ leftKerningGroup = "j-deva";
 {
 color = 8;
 glyphname = "j-deva.long-up";
-lastChange = "2014-11-01 14:54:45 +0000";
+lastChange = "2018-10-29 14:46:16 +0000";
 layers = (
 {
 anchors = (
@@ -105007,6 +105010,16 @@ nodes = (
 width = 540;
 },
 {
+anchors = (
+{
+name = bottom;
+position = "{308, 0}";
+},
+{
+name = nukta;
+position = "{307, -163}";
+}
+);
 background = {
 anchors = (
 {
