@@ -346,15 +346,6 @@ value = -1000;
 {
 name = winDescent;
 value = -1000;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-}
-);
 }
 );
 descender = -254;
@@ -487,15 +478,6 @@ value = -1000;
 {
 name = winDescent;
 value = -1000;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 900;
-}
-);
 }
 );
 descender = -254;
