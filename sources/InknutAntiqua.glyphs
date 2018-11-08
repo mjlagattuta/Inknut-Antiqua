@@ -7,7 +7,7 @@ DisplayStrings = (
 classes = (
 {
 automatic = 1;
-code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Iacute_J.loclNLD Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J K Kcommaaccent L Lacute Lcaron Lcommaaccent Ldot Lslash M N Nacute Ncaron Ncommaaccent Eng Ntilde O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tbar Tcaron Tcedilla Tcommaaccent U Uacute Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent Delta Omega";
+code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Iacute_J.loclNLD Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J K Kcommaaccent L Lacute Lcaron Lcommaaccent Ldot Lslash M N Nacute Ncaron Ncommaaccent Eng Ntilde O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oogonek Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tbar Tcaron Tcedilla Tcommaaccent U Uacute Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent Delta Omega";
 name = Uppercase;
 },
 {
@@ -123,9 +123,10 @@ code = "feature ccmp;\012feature locl;\012feature subs;\012feature sups;\012feat
 name = aalt;
 },
 {
-code = "script dev2;\012sub ii-deva by i-deva reph-deva;\012\012sub eShortMatra-deva eCandraMatra-deva by eShortMatra_eCandraMatra-deva;\012sub eShortMatra-deva candraBindu-deva by eShortMatra_candraBindu-deva;\012sub eMatra-deva eCandraMatra-deva by eMatra_eCandraMatra-deva;\012sub eMatra-deva candraBindu-deva by eMatra_candraBindu-deva;\012sub eMatra-deva reph-deva anusvara-deva by eMatra_reph_anusvara-deva;\012sub aiMatra-deva eCandraMatra-deva by aiMatra_eCandraMatra-deva;\012sub aiMatra-deva candraBindu-deva by aiMatra_candraBindu-deva;\012sub aiMatra-deva anusvara-deva by aiMatra_anusvara-deva;\012sub aiMatra-deva reph-deva anusvara-deva by aiMatra_reph_anusvara-deva;\012sub nukta-deva uMatra-deva by nukta_uMatra-deva;\012sub nukta-deva uuMatra-deva by nukta_uuMatra-deva;\012sub nukta-deva rVocalicMatra-deva by nukta_rVocalicMatra-deva;\012sub nukta-deva rrVocalicMatra-deva by nukta_rrVocalicMatra-deva;\012sub nukta-deva lVocalicMatra-deva by nukta_lVocalicMatra-deva;\012sub nukta-deva llVocalicMatra-deva by nukta_llVocalicMatra-deva;\012sub nukta-deva rakar-deva by nukta_rakar-deva;\012sub nukta-deva rakar-deva uMatra-deva by nukta_rakar_uMatra-deva;\012sub nukta-deva rakar-deva uuMatra-deva by nukta_rakar_uuMatra-deva;\012sub nukta-deva ueMatra-deva by nukta_ueMatra-deva;\012sub nukta-deva uueMatra-deva by nukta_uueMatra-deva;\012sub reph-deva eCandraMatra-deva by reph_eCandraMatra-deva;\012sub reph-deva candraBindu-deva by reph_candraBindu-deva;\012sub reph-deva anusvara-deva by reph_anusvara-deva;\012sub rakar-deva uMatra-deva by rakar_uMatra-deva;\012sub rakar-deva uuMatra-deva by rakar_uuMatra-deva;\012sub rakar-deva halant-deva by rakar_halant-deva;";
+automatic = 1;
+code = "lookup ccmp_Other_1 {\012	@Markscomb = [dieresis hungarumlaut macron ogonek];\012	@MarkscombCase = [dieresis.case hungarumlaut.case macron.case ogonek.case];\012	sub @Markscomb @Markscomb' by @MarkscombCase;\012	sub @Uppercase @Markscomb' by @MarkscombCase;\012} ccmp_Other_1;\012\012lookup ccmp_Other_2 {\012	sub @Markscomb' @MarkscombCase by @MarkscombCase;\012	sub @MarkscombCase @Markscomb' by @MarkscombCase;\012} ccmp_Other_2;\012\012lookup ccmp_dev2_1 {\012	sub eCandraMatra-deva anusvara-deva by candraBindu-deva;\012	sub e-deva eCandraMatra-deva by eCandra-deva;\012	sub ii-deva i-deva by reph-deva;\012	sub reph-deva anusvara-deva by reph_anusvara-deva;\012	sub danda-deva danda-deva by dbldanda-deva;\012	sub aiMatra-deva reph-deva anusvara-deva by aiMatra_reph_anusvara-deva;\012	sub eMatra-deva reph-deva anusvara-deva by eMatra_reph_anusvara-deva;\012	sub aiMatra-deva anusvara-deva by aiMatra_anusvara-deva;\012	sub aiMatra-deva candraBindu-deva by aiMatra_candraBindu-deva;\012	sub aiMatra-deva eCandraMatra-deva by aiMatra_eCandraMatra-deva;\012	sub da-deva rVocalicMatra-deva by da_rVocalicMatra-deva;\012	sub da-deva uuMatra-deva by da_uuMatra-deva;\012	sub eMatra-deva anusvara-deva by eMatra_anusvara-deva;\012	sub eMatra-deva candraBindu-deva by eMatra_candraBindu-deva;\012	sub eMatra-deva eCandraMatra-deva by eMatra_eCandraMatra-deva;\012	sub eShortMatra-deva candraBindu-deva by eShortMatra_candraBindu-deva;\012	sub eShortMatra-deva eCandraMatra-deva by eShortMatra_eCandraMatra-deva;\012	sub ha-deva rVocalicMatra-deva by ha_rVocalicMatra-deva;\012	sub ha-deva uMatra-deva by ha_uMatra-deva;\012	sub ha-deva uuMatra-deva by ha_uuMatra-deva;\012	sub nukta-deva lVocalicMatra-deva by nukta_lVocalicMatra-deva;\012	sub nukta-deva llVocalicMatra-deva by nukta_llVocalicMatra-deva;\012	sub nukta-deva rVocalicMatra-deva by nukta_rVocalicMatra-deva;\012	sub nukta-deva rrVocalicMatra-deva by nukta_rrVocalicMatra-deva;\012	sub nukta-deva uMatra-deva by nukta_uMatra-deva;\012	sub nukta-deva ueMatra-deva by nukta_ueMatra-deva;\012	sub nukta-deva uuMatra-deva by nukta_uuMatra-deva;\012	sub nukta-deva uueMatra-deva by nukta_uueMatra-deva;\012	sub raEyelash-deva ha-deva by raEyelash_ha-deva;\012	sub raEyelash-deva ya-deva by raEyelash_ya-deva;\012	sub ra-deva uMatra-deva by ra_uMatra-deva;\012	sub ra-deva uuMatra-deva by ra_uuMatra-deva;\012	sub reph-deva candraBindu-deva by reph_candraBindu-deva;\012	sub reph-deva eCandraMatra-deva by reph_eCandraMatra-deva;\012} ccmp_dev2_1;\012\012script dev2;\012language MAR;\012lookup ccmp_dev2_1;\012language SAN;\012lookup ccmp_dev2_1;\012language NEP;\012lookup ccmp_dev2_1;\012\012script deva;\012language MAR;\012lookup ccmp_dev2_1;\012language SAN;\012lookup ccmp_dev2_1;\012language NEP;\012lookup ccmp_dev2_1;\012";
 name = ccmp;
-notes = "script dev2;\012sub eShortMatra-deva eCandraMatra-deva by eShortMatra_eCandraMatra-deva;\012sub eShortMatra-deva candraBindu-deva by eShortMatra_candraBindu-deva;\012sub eMatra-deva eCandraMatra-deva by eMatra_eCandraMatra-deva;\012sub eMatra-deva candraBindu-deva by eMatra_candraBindu-deva;\012sub eMatra-deva reph-deva anusvara-deva by eMatra_reph_anusvara-deva;\012sub aiMatra-deva eCandraMatra-deva by aiMatra_eCandraMatra-deva;\012sub aiMatra-deva candraBindu-deva by aiMatra_candraBindu-deva;\012sub aiMatra-deva anusvara-deva by aiMatra_anusvara-deva;\012sub aiMatra-deva reph-deva anusvara-deva by aiMatra_reph_anusvara-deva;\012sub nukta-deva uMatra-deva by nukta_uMatra-deva;\012sub nukta-deva uuMatra-deva by nukta_uuMatra-deva;\012sub nukta-deva rVocalicMatra-deva by nukta_rVocalicMatra-deva;\012sub nukta-deva rrVocalicMatra-deva by nukta_rrVocalicMatra-deva;\012sub nukta-deva lVocalicMatra-deva by nukta_lVocalicMatra-deva;\012sub nukta-deva llVocalicMatra-deva by nukta_llVocalicMatra-deva;\012sub nukta-deva rakar-deva by nukta_rakar-deva;\012sub nukta-deva rakar-deva uMatra-deva by nukta_rakar_uMatra-deva;\012sub nukta-deva rakar-deva uuMatra-deva by nukta_rakar_uuMatra-deva;\012sub nukta-deva ueMatra-deva by nukta_ueMatra-deva;\012sub nukta-deva uueMatra-deva by nukta_uueMatra-deva;\012sub reph-deva eCandraMatra-deva by reph_eCandraMatra-deva;\012sub reph-deva candraBindu-deva by reph_candraBindu-deva;\012sub reph-deva anusvara-deva by reph_anusvara-deva;\012sub rakar-deva uMatra-deva by rakar_uMatra-deva;\012sub rakar-deva uuMatra-deva by rakar_uuMatra-deva;\012sub rakar-deva halant-deva by rakar_halant-deva;\012";
+notes = "Old:\012\012script dev2;\012sub ii-deva by i-deva reph-deva;\012\012sub eShortMatra-deva eCandraMatra-deva by eShortMatra_eCandraMatra-deva;\012sub eShortMatra-deva candraBindu-deva by eShortMatra_candraBindu-deva;\012sub eMatra-deva eCandraMatra-deva by eMatra_eCandraMatra-deva;\012sub eMatra-deva candraBindu-deva by eMatra_candraBindu-deva;\012sub eMatra-deva reph-deva anusvara-deva by eMatra_reph_anusvara-deva;\012sub aiMatra-deva eCandraMatra-deva by aiMatra_eCandraMatra-deva;\012sub aiMatra-deva candraBindu-deva by aiMatra_candraBindu-deva;\012sub aiMatra-deva anusvara-deva by aiMatra_anusvara-deva;\012sub aiMatra-deva reph-deva anusvara-deva by aiMatra_reph_anusvara-deva;\012sub nukta-deva uMatra-deva by nukta_uMatra-deva;\012sub nukta-deva uuMatra-deva by nukta_uuMatra-deva;\012sub nukta-deva rVocalicMatra-deva by nukta_rVocalicMatra-deva;\012sub nukta-deva rrVocalicMatra-deva by nukta_rrVocalicMatra-deva;\012sub nukta-deva lVocalicMatra-deva by nukta_lVocalicMatra-deva;\012sub nukta-deva llVocalicMatra-deva by nukta_llVocalicMatra-deva;\012sub nukta-deva rakar-deva by nukta_rakar-deva;\012sub nukta-deva rakar-deva uMatra-deva by nukta_rakar_uMatra-deva;\012sub nukta-deva rakar-deva uuMatra-deva by nukta_rakar_uuMatra-deva;\012sub nukta-deva ueMatra-deva by nukta_ueMatra-deva;\012sub nukta-deva uueMatra-deva by nukta_uueMatra-deva;\012sub reph-deva eCandraMatra-deva by reph_eCandraMatra-deva;\012sub reph-deva candraBindu-deva by reph_candraBindu-deva;\012sub reph-deva anusvara-deva by reph_anusvara-deva;\012sub rakar-deva uMatra-deva by rakar_uMatra-deva;\012sub rakar-deva uuMatra-deva by rakar_uuMatra-deva;\012sub rakar-deva halant-deva by rakar_halant-deva;\012";
 },
 {
 code = "script latn;\012language NLD;\012sub iacute j by iacute_j.loclNLD;\012sub Iacute J by Iacute_J.loclNLD;\012language CAT;\012sub  l' periodcentered' l by ldot;\012sub  L' periodcentered' L by Ldot;\012language ROM;\012sub Scedilla by Scommaaccent;\012sub scedilla by scommaaccent;\012sub Tcedilla by Tcommaaccent;\012sub tcedilla by tcommaaccent;\012language MOL;\012sub Scedilla by Scommaaccent;\012sub scedilla by scommaaccent;\012sub Tcedilla by Tcommaaccent;\012sub tcedilla by tcommaaccent;\012language KAZ;\012sub i by idotaccent;\012language TAT;\012sub i by idotaccent;\012language TRK;\012sub i by idotaccent;\012language CRT;\012sub i by idotaccent;\012language AZE;\012sub i by idotaccent;\012\012script dev2;\012lookup case_devanagari {\012	sub @LatinPunctuation by @DevaPunctuation;\012} case_devanagari;\012language MAR;\012sub s_t_ra-deva by s_t_ra-deva.loclMAR;\012sub la-deva by la-deva.loclMAR;\012sub sha-deva by sha-deva.loclMAR;\012sub l-deva by l-deva.loclMAR;\012sub sh-deva by sh-deva.loclMAR;\012sub five-deva by five-deva.loclMAR;\012sub eight-deva by eight-deva.loclMAR;\012sub nine-deva by nine-deva.loclMAR;\012sub la-deva.loclMAR rVocalicMatra-deva by lVocalic-deva;\012sub la-deva.loclMAR rrVocalicMatra-deva by llVocalic-deva;\012\012script deva;\012	lookup case_devanagari;\012language MAR;\012sub s_t_ra-deva by s_t_ra-deva.loclMAR;\012sub la-deva by la-deva.loclMAR;\012sub sha-deva by sha-deva.loclMAR;\012sub l-deva by l-deva.loclMAR;\012sub sh-deva by sh-deva.loclMAR;\012sub five-deva by five-deva.loclMAR;\012sub eight-deva by eight-deva.loclMAR;\012sub nine-deva by nine-deva.loclMAR;\012sub la-deva.loclMAR rVocalicMatra-deva by lVocalic-deva;\012sub la-deva.loclMAR rrVocalicMatra-deva by llVocalic-deva;";
@@ -6001,7 +6002,7 @@ unicode = 0150;
 },
 {
 glyphname = Omacron;
-lastChange = "2018-11-07 19:50:00 +0000";
+lastChange = "2018-11-07 20:35:17 +0000";
 layers = (
 {
 components = (
@@ -6023,7 +6024,7 @@ name = O;
 },
 {
 name = macron.case;
-transform = "{1, 0, 0, 1, 375, -6}";
+transform = "{1, 0, 0, 1, 158, 256}";
 }
 );
 layerId = "EED98765-8720-4D79-BBF2-40D7DAF3490F";
@@ -9896,7 +9897,7 @@ unicode = 0059;
 },
 {
 glyphname = Yacute;
-lastChange = "2018-10-29 15:07:40 +0000";
+lastChange = "2018-11-07 20:35:17 +0000";
 layers = (
 {
 components = (
@@ -9918,7 +9919,7 @@ name = Y;
 },
 {
 name = acute;
-transform = "{1, 0, 0, 1, 237, 256}";
+transform = "{1, 0, 0, 1, 240, 256}";
 }
 );
 layerId = "EED98765-8720-4D79-BBF2-40D7DAF3490F";
@@ -9931,7 +9932,7 @@ unicode = 00DD;
 },
 {
 glyphname = Ycircumflex;
-lastChange = "2018-10-29 15:07:40 +0000";
+lastChange = "2018-11-07 20:35:17 +0000";
 layers = (
 {
 components = (
@@ -9953,7 +9954,7 @@ name = Y;
 },
 {
 name = circumflex;
-transform = "{1, 0, 0, 1, 113, 256}";
+transform = "{1, 0, 0, 1, 116, 256}";
 }
 );
 layerId = "EED98765-8720-4D79-BBF2-40D7DAF3490F";
@@ -9966,7 +9967,7 @@ unicode = 0176;
 },
 {
 glyphname = Ydieresis;
-lastChange = "2018-10-29 15:07:40 +0000";
+lastChange = "2018-11-07 20:35:17 +0000";
 layers = (
 {
 components = (
@@ -9988,7 +9989,7 @@ name = Y;
 },
 {
 name = dieresis.case;
-transform = "{1, 0, 0, 1, 82, 256}";
+transform = "{1, 0, 0, 1, 85, 256}";
 }
 );
 layerId = "EED98765-8720-4D79-BBF2-40D7DAF3490F";
@@ -10001,7 +10002,7 @@ unicode = 0178;
 },
 {
 glyphname = Ygrave;
-lastChange = "2018-10-29 15:07:40 +0000";
+lastChange = "2018-11-07 20:35:17 +0000";
 layers = (
 {
 components = (
@@ -10023,7 +10024,7 @@ name = Y;
 },
 {
 name = grave;
-transform = "{1, 0, 0, 1, 138, 256}";
+transform = "{1, 0, 0, 1, 141, 256}";
 }
 );
 layerId = "EED98765-8720-4D79-BBF2-40D7DAF3490F";
@@ -21845,9 +21846,31 @@ rightMetricsKey = t;
 {
 color = 8;
 glyphname = f_adieresis.liga;
-lastChange = "2018-11-07 19:44:50 +0000";
+lastChange = "2018-11-08 18:09:47 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom_1;
+position = "{250.431, 0}";
+},
+{
+name = bottom_2;
+position = "{834, 0}";
+},
+{
+name = caret_1;
+position = "{555, 0}";
+},
+{
+name = top_1;
+position = "{424, 823}";
+},
+{
+name = top_2;
+position = "{815, 914}";
+}
+);
 components = (
 {
 name = a;
@@ -21928,7 +21951,7 @@ width = 1169;
 anchors = (
 {
 name = bottom_1;
-position = "{263, 0}";
+position = "{221, 0}";
 },
 {
 name = bottom_2;
@@ -21936,15 +21959,15 @@ position = "{788, 0}";
 },
 {
 name = caret_1;
-position = "{525, 0}";
+position = "{480, 0}";
 },
 {
 name = top_1;
-position = "{263, 873}";
+position = "{383, 823}";
 },
 {
 name = top_2;
-position = "{788, 873}";
+position = "{733, 913}";
 }
 );
 components = (
@@ -22033,7 +22056,7 @@ rightMetricsKey = adieresis;
 {
 color = 7;
 glyphname = f_b.liga;
-lastChange = "2018-10-29 15:07:35 +0000";
+lastChange = "2018-11-08 19:49:14 +0000";
 layers = (
 {
 background = {
@@ -140406,7 +140429,7 @@ width = 600;
 },
 {
 glyphname = "reph-deva";
-lastChange = "2018-10-29 15:07:36 +0000";
+lastChange = "2018-11-07 20:33:52 +0000";
 layers = (
 {
 anchors = (
@@ -140586,7 +140609,7 @@ width = 600;
 },
 {
 glyphname = "reph-deva.low";
-lastChange = "2018-11-02 17:47:30 +0000";
+lastChange = "2018-11-07 21:55:10 +0000";
 layers = (
 {
 anchors = (
@@ -142207,7 +142230,7 @@ width = 600;
 {
 export = 0;
 glyphname = "reph-deva.tall";
-lastChange = "2018-10-30 14:57:38 +0000";
+lastChange = "2018-11-07 21:54:57 +0000";
 layers = (
 {
 anchors = (
