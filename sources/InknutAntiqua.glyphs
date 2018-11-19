@@ -317,15 +317,15 @@ value = -178;
 },
 {
 name = hheaAscender;
-value = 2063;
+value = 1703;
 },
 {
 name = winAscent;
-value = 2063;
+value = 1703;
 },
 {
 name = typoAscender;
-value = 2063;
+value = 1703;
 },
 {
 name = hheaLineGap;
@@ -337,19 +337,19 @@ value = 0;
 },
 {
 name = vheaVertDescender;
-value = -1000;
+value = -876;
 },
 {
 name = hheaDescender;
-value = -1000;
+value = -876;
 },
 {
 name = typoDescender;
-value = -1000;
+value = -876;
 },
 {
 name = winDescent;
-value = -1000;
+value = 876;
 },
 {
 name = shoulderHeight;
@@ -449,20 +449,16 @@ name = underlineThickness;
 value = 95;
 },
 {
-name = underlinePosition;
-value = -152;
-},
-{
 name = hheaAscender;
-value = 1500;
+value = 1703;
 },
 {
 name = winAscent;
-value = 1500;
+value = 1703;
 },
 {
 name = typoAscender;
-value = 1500;
+value = 1703;
 },
 {
 name = hheaLineGap;
@@ -474,19 +470,19 @@ value = 0;
 },
 {
 name = vheaVertDescender;
-value = -1000;
+value = -876;
 },
 {
 name = hheaDescender;
-value = -1000;
+value = -876;
 },
 {
 name = typoDescender;
-value = -1000;
+value = -876;
 },
 {
 name = winDescent;
-value = -1000;
+value = 876;
 },
 {
 name = shoulderHeight;
